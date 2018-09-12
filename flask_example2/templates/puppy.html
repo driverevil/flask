@@ -1,0 +1,8 @@
+{# PUPPY HTML #}
+
+{% extends "basic.html" %}
+
+{% block content %}
+<p class="h3">ĉi tio estas la paĝo da: {{name|capitalize}} </p>
+<a href="{{ url_for('static',filename='puppy_image.jpg')}}">Here!</a>
+{% endblock %}

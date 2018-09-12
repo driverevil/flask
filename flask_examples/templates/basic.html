@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Lernado</title>
+  </head>
+  <body>
+    <h2>Bonvenon al vi {{name}}</h2>
+    <h3>{{letters[0]}}</h3>
+    <p>Ĉi tion estas dictionary {{pup_dictionary}}</p>
+    <p>Kaj cxi tion estas kun key: {{pup_dictionary['pup_name']}}</p>
+    <br>
+    <br>
+
+    <h2>Website - Control Flow</h2>
+    <p>{{ my_list }}</p>
+    <br>
+    <p>Unordered list: </p>
+    <ul>
+      {% for item in my_list %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+
+    <p>Logic with if:</p>
+    <br>
+    {% if 'mary' in kof_chars %}
+      <p><strong>Mary</strong> is in the list</p>
+    {% else %}
+      <p>Well, fuck it</p>
+    {% endif %}
+
+
+    <p>Boolean</p>
+    {% if user_log %}
+      <p>Logged</p>
+    {% else %}
+      <p>Login bonvolu</p>
+    {% endif %}
+  </body>
+</html>
